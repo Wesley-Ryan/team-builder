@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import TeamList from './TeamList'
-import '../App.css'
+
 
 
 const TeamForm = () => {
@@ -35,9 +35,11 @@ const TeamForm = () => {
 
       }
     return ( 
-    <div >
+    <div className="app-container">
+        
         <form className="form-container" onSubmit={handleSubmit}>
-            <div className="input-container">  
+            <div className="input-container"> 
+            <h2>Add A new Teammate</h2> 
             Name:  <input name='name' 
             type='text'
             value={formValues.name}
